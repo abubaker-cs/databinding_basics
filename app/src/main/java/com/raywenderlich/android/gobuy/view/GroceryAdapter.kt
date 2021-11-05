@@ -47,7 +47,7 @@ class GroceryAdapter(
     // Gets the number of groceries in the list
     override fun getItemCount() = items.size
 
-    // TODO: return the binding instead of a view
+    // xTODO: return the binding instead of a view
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
         val layoutInflater = LayoutInflater.from(context)
