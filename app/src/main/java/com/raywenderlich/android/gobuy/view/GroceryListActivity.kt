@@ -113,8 +113,9 @@ class GroceryListActivity : AppCompatActivity(), NewItemDialogFragment.NewItemDi
 
         viewModel.removeItem(position)
 
-        // TODO: Update later
+        // xTODO: Update later
         // groceriesTotal.text = viewModel.getTotal().toString()
+        binding.totalAmount = String.format("%.2f", viewModel.getTotal())
 
         // xTODO: call the adapter from the binding object
         // groceryListRecyclerView.adapter?.notifyDataSetChanged()
