@@ -34,6 +34,13 @@
 
     <data>
 
+        <variable
+            name="itemName"
+            type="String" />
+
+        <variable
+            name="price"
+            type="String" />
     </data>
 
     <LinearLayout
@@ -45,26 +52,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!-- TODO: Bind Android Text with the data variable -->
+            <!-- xTODO: Bind Android Text with the data variable -->
             <TextView
                 android:id="@+id/tv_grocery_item_name"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
-                android:text=""
+                android:text="@{itemName}"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <!-- TODO: Bind Android Text with the data variable -->
+            <!-- xTODO: Bind Android Text with the data variable -->
             <TextView
                 android:id="@+id/tv_grocery_item_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingStart="10dp"
                 android:paddingEnd="50dp"
-                android:text=""
+                android:text="@{price}"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/button_edit"

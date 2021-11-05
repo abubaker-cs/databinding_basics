@@ -97,8 +97,8 @@ class ViewHolder(val binding: GroceryListItemBinding) :
     RecyclerView.ViewHolder(binding.root) {
     fun bind(item: GroceryItem) {
         binding.apply {
-            //itemName = "${item.amount}x: ${item.itemName}"
-            //price = item.price.toString()
+            itemName = "${item.amount}x: ${item.itemName}"
+            price = item.price.toString()
         }
     }
 }
